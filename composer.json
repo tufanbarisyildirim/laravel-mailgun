@@ -1,0 +1,21 @@
+{
+    "name": "killswitch/laravel-mailgun",
+    "description": "Laravel bundle for Mailgun",
+    "authors": [
+        {
+            "name": "Josh Manders",
+            "email": "josh@joshmanders.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.1.x",
+        "mailgun/mailgun-php": "1.4.x"
+    },
+    "autoload": {
+        "psr-0": {
+            "Killswitch\\LaravelMailgun": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
