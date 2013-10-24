@@ -1,7 +1,7 @@
 laravel-mailgun
 ===============
 
-This is just a wrapper for the class by [Mailgun](https://github.com/mailgun/mailgun-php) themselves for easy use in Laravel 4. It provides a service provider and a Facade so you can do the following:
+This is just a wrapper for the class by [Mailgun](https://github.com/mailgun/mailgun-php) themselves for easy use in Laravel 4.1 (Yes this requires 4.1 to use). It provides a service provider and a Facade so you can do the following:
 
 ```php
 Mailgun::sendMessage(Config::get('mailgun.domain'), $message);
