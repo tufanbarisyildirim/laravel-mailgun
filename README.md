@@ -1,4 +1,20 @@
 laravel-mailgun
 ===============
 
-Read me needs to be completed.
+This is just a wrapper for the class by [Mailgun](https://github.com/mailgun/mailgun-php) themselves for easy use in Laravel 4. It provides a service provider and a Facade so you can do the following:
+
+```php
+Mailgun::sendMessage(Config::get('mailgun.domain'), $message);
+```
+
+Instead of the ugly way
+
+```php
+$mailgun = new Mailgun(Config::get('mailgun.api_key'));
+$mailgun->sendMessage(Config::get('mailgun.domain'), $message);
+```
+
+That doesn't follow the beauty of Laravel's static like classes, no way!
+
+## Installation
+First you need to add this to your `composer.json` file. `"killswitch/laravel-mailgun": "dev-master"` Then you need to `composer update` to bring it in... Once that's done, just add `Killswitch\LaravelMailgun\LaravelMailgunServiceProvider` to your `config/app.php` file under `providers`
