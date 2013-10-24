@@ -1,4 +1,4 @@
 laravel-mailgun
 ===============
 
-Laravel bundle for Mailgun
+Read me needs to be completed.
